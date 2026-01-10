@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body{
     font-family: lato;
 }
 
-.container{
+.container {
     background-color: #fff;
     padding: 2rem;
     border-radius: 1rem;
@@ -25,22 +25,24 @@ body{
     box-shadow: 0 0 25px 2px rgba(255, 255, 255, 0.7);
 }
 
-form{
+form {
     margin: 2rem 0 0 0;
 }
 
-p{
+p {
     font-size: 1.1rem;
 }
 
-input,button,select{
+input,
+button,
+select {
     width: 100%;
     border-radius: 0.5rem;
     border: none;
     outline: none;
 }
 
-input{
+input {
     border: 1px solid lightgray;
     font-size: 1.2rem;
     margin: 0.3rem 0 0 0;
@@ -49,7 +51,7 @@ input{
     text-align: center;
 }
 
-.dropdowns{
+.dropdowns {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,7 +59,7 @@ input{
     gap: 1.5rem;
 }
 
-.select-container{
+.select-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,18 +69,18 @@ input{
     border-radius: 0.4rem;
 }
 
-.select-container img{
+.select-container img {
     width: 2.5rem;
 }
 
-select{
+select {
     font-size: 1rem;
     padding: 0.3rem;
     width: 6rem;
 }
 
 
-i{
+i {
     margin-top: 1.3rem;
     font-size: 1.5rem;
     color: #007bff;
@@ -91,13 +93,13 @@ i{
     transform: rotate(180deg);
 }
 
-.output{
+.output {
     margin: 2rem 0;
 }
 
-button{
+button {
     padding: 0.5rem 0.75rem;
-    background-color: #007bff; 
+    background-color: #007bff;
     color: #fff;
     height: 2.5rem;
     font-size: 1.1rem;
@@ -105,31 +107,50 @@ button{
 }
 
 
-@media (max-width: 500px){
-    .container{
+@media (max-width: 500px) {
+    body {
+        background: #fff;
+    }
+
+    .container {
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
         border-radius: 0;
+        box-shadow: none;
     }
 }
 
 
-@media (max-width: 400px){
-
-    body{
+@media (max-width: 400px) {
+    html {
         font-size: 14px;
     }
 
-    input{
+
+    input {
         height: 2.3rem;
     }
 
-    .dropdowns{
+    .dropdowns {
         flex-direction: column;
         gap: 1rem;
     }
 
-    i{
+    i {
         margin-top: 0;
+    }
+
+    button,
+    input {
+        width: 70%;
+    }
+
+    html,
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        height: 100%;
     }
 }
